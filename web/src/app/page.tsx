@@ -2,9 +2,9 @@
 
 import { useMemo, useRef, useState } from "react";
 import styles from "./page.module.css";
-import { ClipPlan, RenderedClip, generateEvenlySpacedPlans, renderClip } from "@/lib/canvasClipper";
-import { requestYouTubeAccessToken } from "@/lib/googleAuth";
-import { uploadToYouTube } from "@/lib/youtubeUpload";
+import { ClipPlan, RenderedClip, generateEvenlySpacedPlans, renderClip } from "@/utils/canvasClipper";
+import { requestYouTubeAccessToken } from "@/utils/googleAuth";
+import { uploadToYouTube } from "@/utils/youtubeUpload";
 
 function defaultHookGenerator(topic: string) {
   const hooks = [
